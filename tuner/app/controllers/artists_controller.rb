@@ -1,3 +1,5 @@
+# This is our database query
+
 class ArtistsController < ApplicationController
   def index
     @artists=Artist.all
