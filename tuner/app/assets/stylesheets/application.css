@@ -8,8 +8,21 @@ img {
     padding: 0;
     display: block;
     margin: 0 auto;
-    max-height: 40%;
-    max-width: 40%;
+    max-height: 30%;
+    max-width: 30%;
+
+    position: relative;
+
+}
+
+footer {
+  display: block;
+  position:fixed;
+  bottom:0;
+  left:50%;
+  margin-left:-200px; /*negative half the width */
+  width:400px;
+  height:100px;
 }
 /*
  * This is a manifest file that'll be compiled into application.css, which will include all the files
