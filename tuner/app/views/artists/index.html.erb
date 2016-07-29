@@ -3,8 +3,13 @@
     <li>
       <p><%= link_to artist.name, artist_path(artist) %>
       </p>
+      <p>
+        <%= link_to 'Delete Artist', artist_path(artist),
+        method: :delete,
+        data: {confirm: "Are you sure you want to delete this?"} %>
+      </p>
     </li>
   <% end %>
 </ul>
 
-<h2><%= link_to "Create the Artist", new_artist_path %></h2>
+<h2><%= link_to "Create Artist", new_artist_path %></h2>
